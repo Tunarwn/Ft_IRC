@@ -1,0 +1,22 @@
+~Kanal Modları~
+
+o : Operatör yetkisi verir. 
+n : Yalnızca odadaki userlar mesaj atabilir.
+ı : Yalnızca davet ile katılabilirler.
+m : Yalnızca yönetici yetkisine sahip olanlar mesaj atabilir.
+l : Kanala katılacak kişi limit yetkisini verir.
+k : Kanala şifre koymaya yarar.
+
+~Komutlar~
+
+MODE : Modlar, kullanıcının yetkilerini, kanalın özelliklerini
+ve diğer birçok özelliği belirlemek için kullanılır.
+- /MODE +n vb.
+
+PASS : Kanala nc ile bağlanırken şifreli kanala erişmek için kullanırız.
+- /PASS 
+
+USER : 
+
+
+!!! nc bağlantısını cntrl+c ile bağlantı suspended moda geçer bunu "fg" ile continue edebiliriz.
