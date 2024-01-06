@@ -31,13 +31,13 @@ void PrivMsgCommand::replyError(UserForm& form) {
 	form.second->sendMessageToUser(form.second, message);
 }
 
-void PrivMsgCommand::replySuccess(IServer& server, UserForm& form) {
+void Command::replySuccess(IServer& server, UserForm& form) {
 	ContMessage message;
 	std::string source;
 
 	message = form.first;
 	message.erase(message.begin());
-	source = Utils::getSorurce(form.second);
+	source = Utils::getSource(form.second);
 	message.insert(message.begin(), RPL_PRIVMSG(source, form.first[0]));
 	message[0] += message[1];
 	message.erase(message.begin() + 1);//do not let to put space after ':'
